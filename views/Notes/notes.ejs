@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/CSS/Notes/notes.css">
+</head>
+
+<body>
+    <div class="notes-container">
+        <h1>Your Notes</h1>
+        <button id="openAddModal" class="add-btn">+ Add Note</button>
+        <ul id="notesList" class="notes-list"></ul>
+    </div>
+
+    <!-- Add Note Modal -->
+    <div id="addNoteModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeAddModal">&times;</span>
+            <h2>Add Note</h2>
+            <label for="noteTitle">Title</label>
+            <input type="text" id="noteTitle" placeholder="Note Title">
+            <label for="categoryName">Category</label>
+            <input type="text" id="categoryName" placeholder="Category Name">
+            <label for="noteContent">Content</label>
+            <textarea id="noteContent" placeholder="Note Content"></textarea>
+            <button id="addNoteBtn">Add</button>
+        </div>
+    </div>
+
+    <!-- Edit Note Modal -->
+    <div id="editNoteModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeEditModal">&times;</span>
+            <h2>Edit Note</h2>
+            <label for="editNoteTitle">Title</label>
+            <input type="text" id="editNoteTitle" placeholder="Note Title">
+            <label for="editCategoryName">Category</label>
+            <input type="text" id="editCategoryName" placeholder="Category Name">
+            <label for="editNoteContent">Content</label>
+            <textarea id="editNoteContent" placeholder="Note Content"></textarea>
+            <button id="saveEditBtn">Save</button>
+        </div>
+    </div>
+
+    <script src="/JS/Notes/notes.js"></script>
+</body>
+
+</html>

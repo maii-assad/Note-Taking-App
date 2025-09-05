@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Categories</title>
+    <link rel="stylesheet" href="/CSS/Categories/categories.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="categories-container">
+        <!-- Title -->
+        <h2>Categories</h2>
+
+        <!-- Add Category Form -->
+        <form id="categoryForm" class="add-category">
+            <input type="text" id="newCategoryName" name="name" placeholder="Enter category name" required>
+            <button type="submit" id="addCategoryBtn">Add Category</button>
+        </form>
+
+        <!-- Categories List -->
+        <h3>Your Categories</h3>
+        <ul id="categoriesList" class="categories-list"></ul>
+    </div>
+
+    <script src="/JS/Categories/categories.js"></script>
+</body>
+
+</html>

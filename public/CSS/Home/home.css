@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #e1bee7);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #5e35b1;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    color: #1e88e5;
+    margin-bottom: 15px;
+}
+
+.categories,
+.notes {
+    background: #f3e5f5;
+    border-left: 6px solid #3949ab;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categories ul,
+.notes ul {
+    list-style: none;
+}
+
+.categories li,
+.notes li {
+    background: #bbdefb;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.categories li:hover,
+.notes li:hover {
+    background: #90caf9;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.note h3 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: #283593;
+}
+
+.note p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.note small {
+    font-size: 0.8rem;
+    color: #616161;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+
+  <!-- Axios for making API requests -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <!-- Stylesheet for login page -->
+  <link rel="stylesheet" href="/CSS/Auth/LoginStart.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="login-container">
+    <!-- Page Heading -->
+    <h2>Login</h2>
+
+    <!-- Login Form -->
+    <form id="login-form" class="login-form">
+      
+      <!-- Username input -->
+      <div class="form-group">
+        <label for="username">Username :</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+
+      <!-- Password input -->
+      <div class="form-group">
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </div>
+
+  <!-- Script that handles form submission -->
+  <script src="/JS/Auth/LoginStart.js"></script>
+</body>
+</html>
